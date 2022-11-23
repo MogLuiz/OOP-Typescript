@@ -1,1 +1,1 @@
-console.log('ola typescript!');
+const luiz = 'asdfasdas';
