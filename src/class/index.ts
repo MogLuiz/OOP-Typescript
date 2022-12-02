@@ -7,9 +7,17 @@ export class Enterprise {
     this.name = name;
     this.cnpj = cnpj;
   }
+
+  addCollaborator() {}
 }
 
-export class Collaborator {}
+export class Collaborator {
+  constructor(public readonly name: string, public readonly lastName: string) {}
+}
 
 const enterprise1 = new Enterprise('Wiser', '11.111.111/0001-11');
+const collaborator1 = new Collaborator('Luiz', 'Ramos');
+const collaborator2 = new Collaborator('Lucas', 'Souza');
+const collaborator3 = new Collaborator('Gislene', 'Souza');
+
 console.log(enterprise1);
